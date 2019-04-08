@@ -1,13 +1,23 @@
-usу strict;
+var money = prompt('Введите ваш бюджет на месяц');
+var time = prompt('Введите дату в формате YYYY-MM-DD');
 
-let obj = {
-name: "Sergey", 
-age: 21,
-region: "Minsk",
-nationality: "Belarusian",
-isMarried: false
+var appData = {
 
+    budget: money,
+    timeData: time,
+    expenses: 0,
+    optionalExpenses: 0,
+    income:[],
+    savings: false
 }
-console.log(obj.age);
-
-
+var question1 = prompt('Введите обязательную статью расходов в этом месяце'),
+    question2 = prompt('Во сколько обойдется?'),
+    question3 = prompt('Введите обязательную статью расходов в этом месяце'),
+    question4 = prompt('Во сколько обойдется?');
+    
+    expenses = {
+        question1 : question2;
+        question3 : question4
+    };
+    alert("Ваш бюджет на один день" + appData.budget/30);
+    
