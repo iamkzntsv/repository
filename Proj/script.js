@@ -5,7 +5,7 @@ var appData = {
 
     budget: money,
     timeData: time,
-    expenses: 0,
+    expenses: {},
     optionalExpenses: 0,
     income:[],
     savings: false
@@ -19,5 +19,7 @@ var question1 = prompt('Введите обязательную статью р�
         question1 : question2;
         question3 : question4
     };
+    appData.expenses.question1 = question2;
+    appData.expenses.question3 = question4;     
     alert("Ваш бюджет на один день" + appData.budget/30);
     
